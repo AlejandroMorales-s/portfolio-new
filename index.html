@@ -13,22 +13,62 @@
 </head>
 <body>
     <header>
-        <div class="container nav">
-            <div class="logo">
-                <h1>Alejandro<span class="logo_bold">Morales</span></h1>
-                <i class="fab fa-html5"></i>
-                <i class="fab fa-css3-alt"></i>
-                <i class="fab fa-sass"></i>
-                <i class="fab fa-js-square"></i>
+        <!--Navbar-->
+        <div class="nav-container">
+            <div class="container nav">
+                <div class="logo">
+                    <a href="index.html">
+                        <h1>Alejandro<span class="logo_bold">Morales</span></h1>
+                    </a>
+                </div>
+                <nav class="nav_li">
+                    <ul class="nav_btns">
+                        <li class="nav_btn"><a href="#about">Technologies</a></li>
+                        <li class="nav_btn"><a href="certificates.html">Certificates</a></li>
+                        <li class="nav_btn"><a href="projects.html">Projects</a></li>
+                        <li class="nav_btn"><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="nav_li">
-                <ul class="nav_btns">
-                    <li class="nav_btn"><a href="#about">Certificates</a></li>
-                    <li class="nav_btn"><a href="#portfolio">Projects</a></li>
-                    <li class="nav_btn"><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+        </div>
+        <!--Hero-->
+        <div class="container hero">
+            <div class="hero_text">
+                <h2 class="hero_info">Hi I'm</h2>
+                <h2 class="hero_info">Alejandro Morales</h2>
+                <h2 class="hero_info">Web Developer</h2>
+            </div>
+            <div class="hero_img">
+                <img src="build/heroImg.svg" alt="hero">
+            </div>
         </div>
     </header>
+    <main>
+        <div class="container">
+            <!--About me-->
+            <div class="aboutMe">
+                <div class="aboutMe_info">
+                    <h2 class="aboutMe_title text-center">About Me</h2>
+                    <p class="aboutMe_text">Un día me entro la duda de cómo es que las páginas en la web son hechas, quien las hace. Investigando, me llamo mucho la atención este mundo del Desarrollo Web, desde entonces estudio de forma autodidacta casi todos los días para mejorar mis habilidades como Desarrollador Web y así aumentar la calidad de mis trabajos.</p>
+                </div>
+            </div>
+        </div>
+        <!--Technologies-->
+        <div class="container technologies">
+            <div class="technologies_text">
+                <h2 class="technologies_title text-center">Technologies</h2>
+            </div>
+            <div id="technologies" class="technologies_icons"></div>
+        </div>
+    </main>
+    <footer>
+        <!--Footer-->
+        <div class="container footer">
+            <p>Made by Alejandro Morales</p>
+            <div id="socialMedia" class="socialMedia"></div>
+        </div>
+    </footer>
 </body>
+<script src="build/js/socialMedia.min.js"></script>
+<script src="src/js/technologies.js"></script>
 </html>
