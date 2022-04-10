@@ -433,10 +433,47 @@ template {
 .nav .logo h1 .logo_bold {
   font-weight: 700;
 }
+.nav .hamburguer {
+  display: none;
+}
+@media (min-width: 375px) and (max-width: 768px) {
+  .nav .hamburguer {
+    display: block;
+  }
+}
+.nav #sidebar .nav-btns_tel {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  height: 100vh;
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.nav #sidebar .nav-btns_tel .nav_btns {
+  display: flex !important;
+  flex-direction: column;
+  row-gap: 4rem;
+}
+.nav #sidebar .nav-btns_tel .nav_btns .btn-tel {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
 .nav .nav_li .nav_btns {
   display: flex;
   column-gap: 2rem;
   align-items: center;
+}
+@media (min-width: 375px) and (max-width: 768px) {
+  .nav .nav_li .nav_btns {
+    display: none;
+  }
 }
 .nav .nav_li .nav_btns .nav_btn {
   list-style: none;
@@ -466,6 +503,20 @@ template {
 }
 .nav .nav_li .nav_btns .nav_btn:nth-of-type(4) a {
   color: #ffffff;
+}
+
+.no-display {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.absolute {
+  position: absolute;
+  z-index: 200;
+  transform: translateX(29rem);
 }
 
 footer {
