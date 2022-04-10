@@ -496,9 +496,25 @@ footer .footer .socialMedia .social {
   background-color: rgba(249, 239, 220, 0.4);
   padding-top: 10rem;
 }
+@media (min-width: 375px) and (max-width: 768px) {
+  .hero {
+    display: block;
+  }
+}
+@media (min-width: 375px) and (max-width: 768px) {
+  .hero .hero_text {
+    margin: 5rem auto;
+  }
+}
 .hero .hero_text .hero_info {
   font-size: 5rem;
   line-height: 7rem;
+}
+@media (min-width: 375px) and (max-width: 768px) {
+  .hero .hero_text .hero_info {
+    font-size: 4.5rem;
+    line-height: 5rem;
+  }
 }
 .hero .hero_text .hero_info:last-of-type {
   background-color: #DBA334;
