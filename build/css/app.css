@@ -650,17 +650,16 @@ footer .footer .socialMedia .social {
   margin: 5rem 0;
 }
 
-.filter-btns {
-  display: flex;
-  column-gap: 2rem;
-  padding: 2.5rem 0;
-}
-
 .projects {
   margin-bottom: 5rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2.5rem;
+}
+@media (min-width: 375px) and (max-width: 768px) {
+  .projects {
+    grid-template-columns: 1fr;
+  }
 }
 .projects .project_card {
   box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.075);
