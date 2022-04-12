@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This is my portfolio, here I show you all my experience as a Web Developer.">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Icons -->
     <script src="https://kit.fontawesome.com/71bc87b5be.js" crossorigin="anonymous"></script>
     <!-- Styles -->
     <link rel="stylesheet" href="build/css/app.css">
-    <title>Alejandro Morales</title>
+    <title>Alejandro Morales | Portfolio</title>
 </head>
 <body>
     <header>
@@ -48,18 +50,18 @@
         </div>
         <!--Hero-->
         <div class="container hero">
-            <div class="hero_text">
+            <div class="hero_text" data-aos="fade-down">
                 <h2 class="hero_info"><span style='font-size:45px;'>&#128075;</span>Hi!, I'm</h2>
                 <h2 class="hero_info">Alejandro Morales</h2>
                 <h2 class="hero_info">Web Developer</h2>
             </div>
-            <div class="hero_img">
+            <div class="hero_img" data-aos="fade-left">
                 <img src="build/img/heroImg.svg" alt="hero">
             </div>
         </div>
     </header>
     <main>
-        <div class="container">
+        <div class="container" data-aos="fade-up">
             <!--About me-->
             <div class="aboutMe">
                 <div class="aboutMe_info">
@@ -69,7 +71,7 @@
             </div>
         </div>
         <!--Technologies-->
-        <div class="container technologies">
+        <div class="container technologies" data-aos="fade-up">
             <div class="technologies_text">
                 <h2 class="technologies_title text-center">Technologies</h2>
             </div>
@@ -84,7 +86,14 @@
         </div>
     </footer>
 </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 750,
+    });
+</script>
 <script src="build/js/socialMedia.min.js"></script>
 <script src="build/js/technologies.min.js"></script>
 <script src="build/js/sidebar.min.js"></script>
+
 </html>
